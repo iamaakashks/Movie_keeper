@@ -1,6 +1,5 @@
 import React from 'react';
 export default function MovieCard({movie}){
-    console.log()
     function handleFavouriteBtn(){
         console.log("movie bookmarked");
     }
@@ -11,8 +10,8 @@ export default function MovieCard({movie}){
                 <button className="absolute top-2 right-2 border-[1px] rounded-full p-1 bg-zinc-800" onClick={handleFavouriteBtn}>❤️</button>
             </div>
             <div className="movie_info font-medium">
-                <h3>Title : {movie.title}</h3>
-                <h4>Releasing : {movie.release_date}</h4>
+                <h3>{movie.title}</h3>
+                <h4>{movie.release_date}</h4>
             </div>
         </div>
     )
