@@ -31,7 +31,7 @@ export default function Home(){
             <div className="flex flex-wrap justify-between gap-y-4">
                 {movies.map((movie) => {
                     return (
-                        movie.title.toLowerCase().startsWith(searchQuery.toLowerCase()) && <MovieCard movie={movie} key={movie.id}/>
+                        movie.title.toLowerCase().startsWith(searchQuery.toLowerCase()) ? <MovieCard movie={movie} key={movie.id}/> : null
                     )
                 })}
             </div>
