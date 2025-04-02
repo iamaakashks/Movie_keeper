@@ -9,7 +9,7 @@ export default function App(){
       <main className="w-full min-h-screen px-[10%] pt-[2%]">
         <Navbar />
         <Routes>
-          <Route path='/home' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='/favourite' element={<Favourites />} /> 
         </Routes>
       </main>
